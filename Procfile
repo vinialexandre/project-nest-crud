@@ -1,1 +1,1 @@
-web: docker-compose up
+web: npm run start:prod
