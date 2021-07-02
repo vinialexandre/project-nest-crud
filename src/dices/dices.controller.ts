@@ -19,16 +19,16 @@ export class DicesController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.dicesService.findOne(+id);
+    return this.dicesService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateDiceDto: UpdateDiceDto) {
-    return this.dicesService.update(+id, updateDiceDto);
+    return this.dicesService.update(id, updateDiceDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.dicesService.remove(+id);
+    return this.dicesService.remove(id);
   }
 }
